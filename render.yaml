@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: real-estate-chatbot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+    plan: free
