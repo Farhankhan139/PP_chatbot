@@ -13,7 +13,7 @@ app = Flask(__name__)
 # Download model.pkl from Google Drive if not already downloaded
 if not os.path.exists('model.pkl'):
     print("Downloading model.pkl from Google Drive...")
-    gdown.download(id='YOUR_FILE_ID_HERE', output='model.pkl', quiet=False)
+    gdown.download(id='https://drive.google.com/file/d/1WT8tqQtkdNUBts6yAarJbvGWj_ZpCmlb/view?usp=sharing', output='model.pkl', quiet=False)
 
 # Load the trained model and artifacts
 with open('model.pkl', 'rb') as f:
